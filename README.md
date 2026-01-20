@@ -1,3 +1,9 @@
+# ⚠️ DEPRECATED - NO LONGER ACTIVE
+
+**This repository has been deprecated and is no longer active.** The live event has concluded and the content has been taken down from the live post. This repository is kept for internal reference purposes only.
+
+---
+
 # Azure Skilling at Microsoft Ignite 2025
 
 > **Learn, build, and certify with hands-on Azure and AI challenges**
