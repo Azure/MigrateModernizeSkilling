@@ -151,8 +151,7 @@
                     ribbon.textContent = `${daysUntil} DAYS UNTIL | November 17-21, 2025 | Microsoft Ignite`;
                     console.log(`[Event Timer] Event starts in ${daysUntil} days`);
                 } else {
-                    // Event has ended
-                    ribbon.textContent = 'RECORDINGS AVAILABLE | November 17-21, 2025 | Microsoft Ignite';
+                    // Event has ended - keep showing LIVE message
                     console.log('[Event Timer] Event has ended');
                 }
             }
