@@ -1,5 +1,5 @@
 // ==========================================
-// MICROSOFT IGNITE 2025 AZURE SKILLING CHALLENGES
+// AZURE MIGRATE AND MODERNIZE SKILLING
 // Landing Page JavaScript
 // ==========================================
 
@@ -138,24 +138,8 @@
          * Update event ribbon based on current date
          */
         updateEventRibbon: function() {
-            const ribbon = document.querySelector('.event-ribbon .event-text');
-            if (!ribbon) return;
-
-            if (this.isEventLive()) {
-                // Event is live - keep current message
-                console.log('[Event Timer] Event is currently LIVE');
-            } else {
-                const daysUntil = this.getDaysUntilEvent();
-                if (daysUntil > 0) {
-                    // Event hasn't started yet
-                    ribbon.textContent = `${daysUntil} DAYS UNTIL | November 17-21, 2025 | Microsoft Ignite`;
-                    console.log(`[Event Timer] Event starts in ${daysUntil} days`);
-                } else {
-                    // Event has ended
-                    ribbon.textContent = 'RECORDINGS AVAILABLE | November 17-21, 2025 | Microsoft Ignite';
-                    console.log('[Event Timer] Event has ended');
-                }
-            }
+            // Ribbon content is now managed in HTML; no dynamic override needed
+            console.log('[Event Timer] Ribbon managed by HTML');
         }
     };
 
@@ -533,7 +517,7 @@
     // INITIALIZATION
     // ==========================================
     function init() {
-        console.log('[Init] Azure Skilling Challenges at Microsoft Ignite 2025');
+        console.log('[Init] Azure Migrate and Modernize Skilling');
         console.log('[Init] Landing page loaded successfully');
 
         // Initialize mobile navigation
@@ -589,7 +573,7 @@
     // ==========================================
     // EXPORT FOR TESTING (if needed)
     // ==========================================
-    window.IgniteSkilling = {
+    window.AzureSkilling = {
         Analytics,
         EventTimer,
         CONFIG

@@ -4,7 +4,7 @@
 :root {
     /* Microsoft Color Palette */
     --color-azure-blue: #0078d4;
-    --color-purple: #5c2d91;
+    --color-purple: #0053a6;
     --color-orange: #d83b01;
     --color-red: #e81123;
     --color-green: #107c10;
@@ -141,7 +141,7 @@ a:focus {
    ========================================== */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, #0078d4 0%, #5c2d91 50%, #0078d4 100%);
+    background: linear-gradient(135deg, #50e6ff 0%, #0053a6 50%, #0078d4 100%);
     padding: var(--spacing-xxl) 0;
     text-align: center;
     overflow: hidden;
@@ -168,11 +168,11 @@ a:focus {
         /* Parallax layer 1 - slow movement */
         radial-gradient(circle 600px at var(--layer1-x) var(--layer1-y), rgba(255, 255, 255, 0.08) 0%, transparent 50%),
         /* Parallax layer 2 - medium movement */
-        radial-gradient(circle 500px at var(--layer2-x) var(--layer2-y), rgba(92, 45, 145, 0.25) 0%, transparent 50%),
+        radial-gradient(circle 500px at var(--layer2-x) var(--layer2-y), rgba(0, 83, 166, 0.25) 0%, transparent 50%),
         /* Parallax layer 3 - fast movement */
         radial-gradient(circle 400px at var(--layer3-x) var(--layer3-y), rgba(0, 120, 212, 0.2) 0%, transparent 50%),
         /* Base gradient */
-        linear-gradient(135deg, #0078d4 0%, #5c2d91 50%, #0c62a4 100%);
+        linear-gradient(135deg, #50e6ff 0%, #0053a6 50%, #0078d4 100%);
     opacity: 1;
     z-index: 0;
     /* Smooth transitions for non-JavaScript updates */
@@ -1137,7 +1137,7 @@ a:focus {
 .skilling-experience {
     position: relative;
     padding: var(--spacing-xxl) 0;
-    background: linear-gradient(135deg, #0078d4 0%, #5c2d91 50%, #0078d4 100%);
+    background: linear-gradient(135deg, #50e6ff 0%, #0053a6 50%, #0078d4 100%);
     overflow: hidden;
 }
 
@@ -1277,7 +1277,7 @@ a:focus {
 .featured-challenges {
     position: relative;
     padding: var(--spacing-xxl) 0;
-    background: linear-gradient(135deg, #0078d4 0%, #5c2d91 50%, #0078d4 100%);
+    background: linear-gradient(135deg, #50e6ff 0%, #0053a6 50%, #0078d4 100%);
     overflow: hidden;
 }
 
@@ -1331,12 +1331,12 @@ a:focus {
 }
 
 .ai-featured .featured-label {
-    background: linear-gradient(135deg, rgba(0, 120, 212, 0.15), rgba(92, 45, 145, 0.15));
+    background: linear-gradient(135deg, rgba(0, 120, 212, 0.15), rgba(0, 83, 166, 0.15));
     color: var(--color-azure-blue);
 }
 
 .data-featured .featured-label {
-    background: linear-gradient(135deg, rgba(92, 45, 145, 0.15), rgba(0, 120, 212, 0.15));
+    background: linear-gradient(135deg, rgba(0, 83, 166, 0.15), rgba(0, 120, 212, 0.15));
     color: var(--color-purple);
 }
 
