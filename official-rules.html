@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official rules for the Microsoft Migrate and Modernize Summit Challenge Sweepstakes.">
+    <title>Official Rules | Azure Migrate and Modernize Skilling</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .rules-layout {
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+            padding: 2.5rem 0 3rem;
+        }
+        .rules-sidebar {
+            flex: 0 0 240px;
+            position: sticky;
+            top: 100px;
+        }
+        .rules-sidebar-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-muted, #666);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-purple, #0053a6);
+        }
+        .rules-sidebar-subtitle {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-text, #1a1a1a);
+            margin: 0.75rem 0 0.5rem;
+        }
+        .rules-sidebar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .rules-sidebar-nav li {
+            margin: 0;
+        }
+        .rules-sidebar-nav a {
+            display: block;
+            padding: 0.4rem 0.75rem;
+            font-size: 0.875rem;
+            color: var(--color-purple, #0053a6);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            border-radius: 0 4px 4px 0;
+        }
+        .rules-sidebar-nav a:hover,
+        .rules-sidebar-nav a.active {
+            border-left-color: var(--color-purple, #0053a6);
+            background: #f0f6ff;
+            color: var(--color-purple, #0053a6);
+        }
+        .rules-sidebar-nav a.active {
+            font-weight: 600;
+        }
+        .rules-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .rules-page-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-purple, #0053a6);
+            margin: 0 0 1rem;
+            line-height: 1.2;
+        }
+        .rules-intro {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .rules-steps {
+            background: #f8fafd;
+            border-left: 4px solid var(--color-purple, #0053a6);
+            border-radius: 0 8px 8px 0;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.75rem;
+        }
+        .rules-steps h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 0.75rem;
+        }
+        .rules-steps ol {
+            margin: 0;
+            padding-left: 1.25rem;
+            color: #333;
+            line-height: 1.7;
+        }
+        .rules-steps ol li {
+            margin-bottom: 0.5rem;
+        }
+        .rules-cert-list {
+            list-style: disc;
+            padding-left: 1.5rem;
+            color: #333;
+            margin: 0.5rem 0 1rem;
+            line-height: 1.7;
+        }
+        .rules-cert-list li {
+            margin-bottom: 0.25rem;
+        }
+        .rules-note {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .rules-toc-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        .rules-section {
+            margin-bottom: 1.75rem;
+        }
+        .rules-section h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-purple, #0053a6);
+            margin: 0 0 0.6rem;
+        }
+        .rules-section p,
+        .rules-section ul,
+        .rules-section ol {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.7;
+            margin: 0 0 0.6rem;
+        }
+        .rules-section ul {
+            padding-left: 1.5rem;
+        }
+        .rules-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.75rem 0 1rem;
+            font-size: 0.875rem;
+        }
+        .rules-table th {
+            background: var(--color-purple, #0053a6);
+            color: #fff;
+            padding: 0.6rem 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        .rules-table td {
+            padding: 0.55rem 1rem;
+            border-bottom: 1px solid #e5e5e5;
+            color: #333;
+        }
+        .rules-table tr:nth-child(even) td {
+            background: #f8fafd;
+        }
+        @media (max-width: 768px) {
+            .rules-layout {
+                flex-direction: column;
+            }
+            .rules-sidebar {
+                flex: none;
+                width: 100%;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">
+                    <span class="nav-title">Azure Skilling</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="reactor.html" class="nav-link">Reactor</a></li>
+                <li><a href="vouchers.html" class="nav-link">Vouchers</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span class="nav-toggle-icon"></span></button>
+        </div>
+    </nav>
+
+    <!-- Event Ribbon -->
+    <div class="event-ribbon" role="banner">
+        <div class="container">
+            <a href="https://www.microsoft.com/en-us/events/launch-events/migrate-and-modernize-summit" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                <span class="live-indicator" aria-label="Live event">●</span>
+                <span class="event-text">Register for the Microsoft Azure Summit: Migrate and Modernize with Agentic AI</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" role="main">
+        <div class="hero-banner"></div>
+        <div class="container">
+            <h1 class="hero-title">Microsoft Migrate and Modernize Summit Challenge Sweepstakes</h1>
+            <p class="hero-subtitle">Official Rules &amp; Terms and Conditions</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="what-you-learn" style="padding-top: 0;">
+        <div class="container">
+            <div class="rules-layout">
+
+                <!-- Left Sidebar Nav -->
+                <aside class="rules-sidebar">
+                    <p class="rules-sidebar-title">Microsoft Credentials AI Challenge Sweepstakes</p>
+                    <p class="rules-sidebar-subtitle">Microsoft Migrate and Modernize Summit Challenge Sweepstakes</p>
+                    <ul class="rules-sidebar-nav">
+                        <li><a href="official-rules.html" class="active">Official rules</a></li>
+                        <li><a href="faq.html">Frequently asked questions</a></li>
+                        <li><a href="redeem.html">How to redeem your prize</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main Rules Content -->
+                <main class="rules-content">
+                    <h1 class="rules-page-title">Microsoft Migrate and Modernize Summit Challenge Sweepstakes Official Rules</h1>
+
+                    <p class="rules-intro">Enter and complete the Microsoft Migrate and Modernize Challenge, then submit a sweepstakes entry form by May 15, 2026, for a chance to receive a 50% discount Microsoft Certification voucher.</p>
+
+                    <!-- Steps to Enter -->
+                    <div class="rules-steps">
+                        <h2>Steps to enter</h2>
+                        <ol>
+                            <li>Review the sweepstakes terms and conditions on this page.</li>
+                            <li>Register for and complete the Migrate and Modernize Challenge prior to May 15, 2026.</li>
+                            <li>Once you complete the challenge, submit an entry via the <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a> before the sweepstakes period ends on May 15, 2026.</li>
+                            <li>If you're selected as a winner of one of the 50% discount certification exam vouchers (2,000 available), you will be contacted by Pearson Vue via email with your voucher code, along with the steps on how to redeem. Those steps can also be found on the <a href="redeem.html">How to redeem your prize</a> page.</li>
+                        </ol>
+                    </div>
+
+                    <p class="rules-intro" style="margin-bottom: 0.5rem;">The discount certification exam voucher is eligible for one of the three exams below.</p>
+                    <ul class="rules-cert-list">
+                        <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                        <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                        <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                    </ul>
+                    <p class="rules-note">After reviewing the official rules, if you have more questions, please consult the <a href="faq.html">FAQ</a>.</p>
+
+                    <!-- Terms and Conditions -->
+                    <h2 class="rules-toc-title">Sweepstakes terms and conditions</h2>
+
+                    <div class="rules-section">
+                        <h3>1. Sponsor</h3>
+                        <p>These Official Rules ("Rules") govern the operation of the Microsoft Migrate and Modernize Challenge Sweepstakes ("Sweepstakes"). Microsoft Corporation, One Microsoft Way, Redmond, WA, 98052, USA, is the Sweepstakes sponsor ("Sponsor").</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>2. Definitions</h3>
+                        <p>In these Rules, "Microsoft", "we", "our", and "us" refer to Sponsor and "you" and "yourself" refers to a Sweepstakes participant, or the parent/legal guardian of any Sweepstakes entrant who has not reached the age of majority to contractually obligate themselves in their legal place of residence. By entering you (your parent/legal guardian if you are not the age of majority in your legal place of residence) agree to be bound by these Rules.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>3. Entry Period</h3>
+                        <p>The Sweepstakes starts at 6:00 AM (06:00) UTC on March 11, 2026, and ends at 11:59 PM (23:59) UTC on May 15, 2026, ("Entry Period") and will consist of the following Prize Periods (each a "Prize Period").</p>
+                        <table class="rules-table">
+                            <thead>
+                                <tr>
+                                    <th>Prize Period</th>
+                                    <th>Start Date/Time</th>
+                                    <th>End Date/Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>March 11, 2026 at 6:00 AM UTC</td>
+                                    <td>March 18, 2026 at 11:59 PM UTC</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>March 19, 2026 at 12:00 AM UTC</td>
+                                    <td>April 27, 2026 at 11:59 PM UTC</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>April 28, 2026 at 12:00 AM UTC</td>
+                                    <td>May 15, 2026 at 11:59 PM UTC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Entries will be eligible for the Prize period in which they are received, and non-winning entries will be carried over to subsequent Prize Periods. Entrants only need to enter once to be included for all future prize periods, as non-winning entries are carried over to subsequent drawings. Those who completed a qualifying challenge prior to the start of the sweepstakes are still eligible to enter and will be included in the prize period in which they submitted the entry (not completion of the challenge).</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>4. Eligibility</h3>
+                        <p>To enter, you must be 18 years of age or older. If you are 18 years of age or older but have not reached the age of majority in your legal place of residence, then you must have consent of a parent/legal guardian.</p>
+                        <p>Employees and directors of Microsoft Corporation and its subsidiaries, affiliates, advertising agencies, and Sweepstakes Parties are not eligible, nor are persons involved in the execution or administration of this promotion, or the family members of each above (parents, children, siblings, spouse/domestic partners, or individuals residing in the same household). Void in Cuba, Iran, North Korea, Sudan, Syria, Region of Crimea, Russia, and where prohibited.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>5. How to Enter</h3>
+                        <p><strong>No Purchase Necessary.</strong></p>
+                        <p>To enter, you must register for and complete the Migrate and Modernize Challenge and submit a sweepstakes entry form by May 15, 2026 at 11:59 PM UTC (23:59).</p>
+                        <p>After registering for and completing the Migrate and Modernize Challenge, you must visit <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">https://aka.ms/migratemodernizechallenge26entryform</a> to complete an official entry form prior to May 15, 2026, at 11:59 PM UTC (23:59). For doing this, you will receive one (1) entry into the corresponding Prize Period drawing. There is a limit of one (1) entry per person overall. If you are not selected in the corresponding Prize Period drawing, your entry will be rolled over into the next Prize Period drawing, up until the end of the sweepstakes. You do not gain more entries for (1) completing more or other challenges, nor submitting multiple entry forms.</p>
+                        <p>If you would like to be removed from the Migrate and Modernize Challenge Sweepstakes and have your personal data deleted, please email us at <a href="mailto:mschallenge@microsoft.com">Microsoft Challenge Sweepstakes</a>. This request must be sent to the email address you provided for registration. We will delete your personal data within seven (7) business days. This action is limited to this contest and will have no impact on other Microsoft applications. Please see the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a> for information on broader privacy requests.</p>
+                        <p>Any attempt by you to obtain more than the stated number of entries by using multiple/different accounts, identities, registrations, logins, or any other methods will void your entries, and you may be disqualified. Use of any automated system to participate is prohibited.</p>
+                        <p>We are not responsible for excess, lost, late, or incomplete entries. If disputed, entries will be deemed submitted by the "authorized account holder" of the email address, social media account, or other method used to enter. The "authorized account holder" is the natural person assigned to an email address by an internet or online service provider, or other organization responsible for assigning email addresses.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>6. Winner Selection and Notification</h3>
+                        <p>Pending confirmation of eligibility, potential prize winners will be selected within seven (7) days following each Prize Period by Microsoft or their Agent in a random drawing from among all eligible entries as follows:</p>
+                        <table class="rules-table">
+                            <thead>
+                                <tr>
+                                    <th>Prize Period</th>
+                                    <th>Number of Winners</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>1,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Winner email addresses will be shared with Pearson Vue for voucher fulfillment. Vouchers are issued by MindHub Pro by Pearson VUE (<a href="https://home.pearsonvue.com/Legal/Privacy-and-cookies-policy.aspx" target="_blank" rel="noopener noreferrer">privacy statement available here</a>). Winners will receive an email from 'MindhubPro by Pearson VUE' with a digital code to download their prize. If a selected winner cannot be contacted, is ineligible, or fails to claim a prize, the selected winner will forfeit their prize and an alternate winner will be selected time allowing. If you are a potential winner and you are 18 or older but have not reached the age of majority in your legal place of residence, we may require your parent/legal guardian to sign all required forms on your behalf. Only three alternate winners will be selected, after which unclaimed prizes will remain unawarded.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>7. Prizes</h3>
+                        <p>The following prizes will be awarded:</p>
+                        <p>Each winner will receive a 50% discount exam voucher of the 2,000 available. Approximate Retail Value (ARV) $0.00.</p>
+                        <p>Certification codes expire on June 30, 2026, so exam(s) must be booked and completed before this date.</p>
+                        <p>50% discount exam voucher is eligible for these three specific Microsoft Certification exams offered through Pearson Vue.</p>
+                        <ul>
+                            <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                            <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                            <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                        </ul>
+                        <p>Discount voucher is not eligible for GitHub Certification exams.</p>
+                        <p>The total Approximate Retail Value (ARV) of all prizes: $0.00.</p>
+                        <p>We will only award one (1) prize per person overall. No more than the stated number of prizes will be awarded. No substitution, transfer, or assignment of prize permitted, except that Microsoft reserves the right to substitute a prize of equal or greater value in the event the offered prize is unavailable. Microsoft products awarded as prizes are awarded "AS IS" and WITHOUT WARRANTY OF ANY KIND, express or implied (including any implied warranty of merchantability or fitness for a particular purpose); you assume the entire risk of quality and performance, and should the prizes prove defective, you assume the entire cost of all necessary servicing or repair. This is so even if the Microsoft product mentions a warranty on its packaging, in a manual, or in marketing materials; no warranty applies to Microsoft products awarded as prizes.</p>
+                        <p>Microsoft does not give any warranty of any kind, express or implied (including any implied warranty of merchantability or fitness for a particular purpose) on products made by a company other than Microsoft that are awarded as prizes. Please contact the manufacturer to see if it is covered by that company's warranty.</p>
+                        <p>Prizes will be sent no later than 7 days after winner selection. Taxes on the prize, if any, are the sole responsibility of the winner, who is advised to seek independent counsel regarding the tax implications of accepting a prize. By accepting a prize, you agree that Microsoft may use your entry, name, image and hometown online and in print, or in any other media, in connection with this Sweepstakes without payment or compensation to you, except where prohibited by law.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>8. Odds</h3>
+                        <p>The odds of winning are based on the number of eligible entries received.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>9. General Conditions and Release of Liability</h3>
+                        <p>To the extent allowed by law, by entering you agree to release and hold harmless Microsoft and its respective parents, partners, subsidiaries, affiliates, employees, and agents from any and all liability or any injury, loss, or damage of any kind arising in connection with this Sweepstakes or any prize won.</p>
+                        <p>All local laws apply. The decisions of Microsoft are final and binding.</p>
+                        <p>We reserve the right to cancel, change, or suspend this Sweepstakes for any reason, including cheating, technology failure, catastrophe, war, or any other unforeseen or unexpected event that affects the integrity of this Sweepstakes, whether human or mechanical. If the integrity of the Sweepstakes cannot be restored, we may select winners from among all eligible entries received before we have to cancel, change or suspend the Sweepstakes.</p>
+                        <p>If you attempt or we have strong reason to believe that you have compromised the integrity or the legitimate operation of this Sweepstakes by cheating, hacking, creating a bot or other automated program, or by committing fraud in any way, we may seek damages from you to the full extent of the law and you may be banned from participation in future Microsoft promotions.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>10. Use of Your Entry</h3>
+                        <p>Personal data you provide while entering this Sweepstakes will be used by Microsoft and/or its agents and prize fulfillers acting on Microsoft's behalf only for the administration and operation of this Sweepstakes and in accordance with the <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>11. Governing Law</h3>
+                        <p>This Sweepstakes will be governed by the laws of the State of Washington, and you consent to the exclusive jurisdiction and venue of the courts of the State of Washington for any disputes arising out of this Sweepstakes.</p>
+                    </div>
+
+                    <div class="rules-section">
+                        <h3>12. Winners List</h3>
+                        <p>Send an email to <a href="mailto:mschallenge@microsoft.com">Microsoft Challenge Sweepstakes</a> with the subject line "Microsoft Migrate and Modernize Sweepstakes winners" within 30 days of May 15, 2026, to receive a list of winners.</p>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">&copy; 2026 Microsoft Corporation. All rights reserved.</p><ul class="footer-links"><li><a href="privacy.html">Privacy &amp; Security</a></li><li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy</a></li><li><a href="https://www.microsoft.com/en-us/legal/terms-of-use" target="_blank" rel="noopener noreferrer">Terms of Use</a></li><li><a href="https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks" target="_blank" rel="noopener noreferrer">Trademarks</a></li></ul></div></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
