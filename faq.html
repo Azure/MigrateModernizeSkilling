@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions for the Microsoft Migrate and Modernize Summit Challenge Sweepstakes.">
+    <title>Voucher FAQ | Azure Migrate and Modernize Skilling</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .rules-layout {
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+            padding: 2.5rem 0 3rem;
+        }
+        .rules-sidebar {
+            flex: 0 0 240px;
+            position: sticky;
+            top: 100px;
+        }
+        .rules-sidebar-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--color-text-muted, #666);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-purple, #0053a6);
+        }
+        .rules-sidebar-subtitle {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-text, #1a1a1a);
+            margin: 0.75rem 0 0.5rem;
+        }
+        .rules-sidebar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .rules-sidebar-nav li {
+            margin: 0;
+        }
+        .rules-sidebar-nav a {
+            display: block;
+            padding: 0.4rem 0.75rem;
+            font-size: 0.875rem;
+            color: var(--color-purple, #0053a6);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            border-radius: 0 4px 4px 0;
+        }
+        .rules-sidebar-nav a:hover,
+        .rules-sidebar-nav a.active {
+            border-left-color: var(--color-purple, #0053a6);
+            background: #f0f6ff;
+            color: var(--color-purple, #0053a6);
+        }
+        .rules-sidebar-nav a.active {
+            font-weight: 600;
+        }
+        .rules-content {
+            flex: 1;
+            min-width: 0;
+        }
+        .rules-page-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-purple, #0053a6);
+            margin: 0 0 1rem;
+            line-height: 1.2;
+        }
+        .rules-intro {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .rules-steps {
+            background: #f8fafd;
+            border-left: 4px solid var(--color-purple, #0053a6);
+            border-radius: 0 8px 8px 0;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.75rem;
+        }
+        .rules-steps h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 0.75rem;
+        }
+        .rules-steps ol {
+            margin: 0;
+            padding-left: 1.25rem;
+            color: #333;
+            line-height: 1.7;
+        }
+        .rules-steps ol li {
+            margin-bottom: 0.5rem;
+        }
+        .rules-cert-list {
+            list-style: disc;
+            padding-left: 1.5rem;
+            color: #333;
+            margin: 0.5rem 0 1rem;
+            line-height: 1.7;
+        }
+        .rules-cert-list li {
+            margin-bottom: 0.25rem;
+        }
+        .rules-note {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .faq-section {
+            margin-bottom: 2rem;
+        }
+        .faq-section h2 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-purple, #0053a6);
+            margin: 0 0 0.6rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid #e0ecff;
+        }
+        .faq-section p,
+        .faq-section ul,
+        .faq-section ol {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.7;
+            margin: 0 0 0.6rem;
+        }
+        .faq-section ul,
+        .faq-section ol {
+            padding-left: 1.5rem;
+        }
+        .faq-section li {
+            margin-bottom: 0.4rem;
+        }
+        .faq-divider {
+            border: none;
+            border-top: 2px solid #e5e5e5;
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .rules-layout {
+                flex-direction: column;
+            }
+            .rules-sidebar {
+                flex: none;
+                width: 100%;
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="nav-logo">
+                    <span class="nav-title">Azure Skilling</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="reactor.html" class="nav-link">Reactor</a></li>
+                <li><a href="vouchers.html" class="nav-link">Vouchers</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span class="nav-toggle-icon"></span></button>
+        </div>
+    </nav>
+
+    <!-- Event Ribbon -->
+    <div class="event-ribbon" role="banner">
+        <div class="container">
+            <a href="https://www.microsoft.com/en-us/events/launch-events/migrate-and-modernize-summit" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">
+                <span class="live-indicator" aria-label="Live event">●</span>
+                <span class="event-text">Register for the Microsoft Azure Summit: Migrate and Modernize with Agentic AI</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" role="main">
+        <div class="hero-banner"></div>
+        <div class="container">
+            <h1 class="hero-title">Frequently Asked Questions</h1>
+            <p class="hero-subtitle">Microsoft Migrate and Modernize Summit Challenge Sweepstakes</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="what-you-learn" style="padding-top: 0;">
+        <div class="container">
+            <div class="rules-layout">
+
+                <!-- Left Sidebar Nav -->
+                <aside class="rules-sidebar">
+                    <p class="rules-sidebar-title">Microsoft Credentials AI Challenge Sweepstakes</p>
+                    <p class="rules-sidebar-subtitle">Microsoft Migrate and Modernize Summit Challenge Sweepstakes</p>
+                    <ul class="rules-sidebar-nav">
+                        <li><a href="official-rules.html">Official rules</a></li>
+                        <li><a href="faq.html" class="active">Frequently asked questions</a></li>
+                        <li><a href="redeem.html">How to redeem your prize</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Main FAQ Content -->
+                <main class="rules-content">
+                    <h1 class="rules-page-title">Frequently asked questions</h1>
+
+                    <p class="rules-intro">Enter and complete the Microsoft Migrate and Modernize Challenge, then submit a sweepstakes entry form by May 15, 2026, for a chance to receive a 50% discount Microsoft Certification voucher.</p>
+
+                    <!-- Steps to Enter -->
+                    <div class="rules-steps">
+                        <h2>Steps to enter</h2>
+                        <ol>
+                            <li>Review the sweepstakes terms and conditions on the <a href="official-rules.html">official rules page</a>.</li>
+                            <li>Register for and complete the Migrate and Modernize Challenge prior to May 15, 2026.</li>
+                            <li>Once you complete the challenge, submit an entry via the <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a> before the sweepstakes period ends on May 15, 2026.</li>
+                            <li>If you're selected as a winner of one of the 50% discount certification exam vouchers (2,000 available), you will be contacted by Pearson Vue via email with your voucher code, along with the steps on how to redeem. Those steps can also be found on the <a href="redeem.html">How to redeem your prize</a> page.</li>
+                        </ol>
+                    </div>
+
+                    <p class="rules-intro" style="margin-bottom: 0.5rem;">The discount certification exam voucher is eligible for one of the three exams below.</p>
+                    <ul class="rules-cert-list">
+                        <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                        <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                        <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                    </ul>
+                    <p class="rules-note">The <a href="official-rules.html">official rules</a> are available here for further detail.</p>
+
+                    <hr class="faq-divider">
+
+                    <!-- FAQ Q&A -->
+                    <div class="faq-section">
+                        <h2>How do I participate in the Microsoft Migrate and Modernize Challenge Sweepstakes?</h2>
+                        <p>To participate in the Microsoft Migrate and Modernize Challenge Sweepstakes, follow the steps below, then submit a sweepstakes entry form by May 15, 2026, for a chance to receive a 50% discount Microsoft Certification voucher.</p>
+                        <ol>
+                            <li>Review the sweepstakes terms and conditions on the <a href="official-rules.html">official rules page</a>.</li>
+                            <li>Register for and complete the Migrate and Modernize Challenge prior to May 15, 2026.</li>
+                            <li>Once you complete the challenge, submit an entry via the <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a> before the sweepstakes period ends on May 15, 2026.</li>
+                            <li>If you're selected as a winner of one of the 50% discount certification exam vouchers (2,000 available), you will be contacted by Pearson Vue via email with your voucher code, along with the steps on how to redeem. Those steps can also be found on the <a href="redeem.html">How to redeem your prize</a> page.</li>
+                        </ol>
+                        <p>The discount certification exam voucher is eligible for one of the three exams below.</p>
+                        <ul>
+                            <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                            <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                            <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                        </ul>
+                        <p>To register for and complete a Microsoft Challenge, you must have a Microsoft Learn profile. If you do not currently have one that is okay, you can create a free account as you register for the qualifying challenge.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>How do I complete a Microsoft Challenge?</h2>
+                        <p>After you have logged in (or created) your Microsoft Learn profile and register for the challenge, go to the leaderboard page and click the button to go to the challenge collection.</p>
+                        <p>Once on the challenge collection, complete the listed training content before the challenge ends.</p>
+                        <p><strong>Note:</strong> Just completing a challenge does not enter you into the sweepstakes; you must complete a <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a> by May 15, 2026, after finishing the challenge to be entered in the drawing.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>How can I tell if I've completed a Microsoft Challenge?</h2>
+                        <p>Login to your Microsoft Learn profile and go to the challenges home page. From there, look for the qualifying Microsoft challenge in which you registered and participated. On the card, it will show a progress bar if there is still content to complete or will show a checkmark and say "completed" if you have finished the challenge.</p>
+                        <p>You can also login to your Microsoft Learn profile and go directly to the challenge leaderboard page in which you participated. At the top of the page, it will show a "where you stand" section with a display of how many content items you've completed out of the total available in the collection (e.g., 8/8, 12/12, etc.).</p>
+                        <p><strong>Note:</strong> Just completing a challenge does not enter you into the sweepstakes; you must complete a <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a> by May 15, 2026, after finishing the challenge to be entered in the drawing.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>I've completed the Microsoft Migrate and Modernize Challenge. Now what?</h2>
+                        <p>Once you have completed the Migrate and Modernize Challenge, you must submit an entry via the <a href="https://aka.ms/migratemodernizechallenge26entryform" target="_blank" rel="noopener noreferrer">sweepstakes entry form</a>.</p>
+                        <p>To complete the submission, you will need to provide: (1) your Microsoft Learn username, (2) the email address you would like the discount voucher code sent to in the event you are a winner, and (3) verification that you've read and consent to the official rules.</p>
+                        <p>Winners will be drawn across three Prize Periods ending March 18, April 27, and May 15, 2026. Winners will be notified within seven (7) days of each drawing if they have been selected. The discount certification exam voucher is eligible for three specific Microsoft Certification exams conducted by Pearson Vue. It is not eligible for any GitHub Certification exam.</p>
+                        <p>To see the complete rules of the sweepstakes, including the prize drawing schedule, review the <a href="official-rules.html">official rules page</a>.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>When are winners drawn for the Microsoft Migrate and Modernize Challenge Sweepstakes?</h2>
+                        <p>There will be three total drawings conducted across March 18th, April 27th, and May 15th, 2026. Winners will be notified within seven (7) days of the drawings. Please refer to section three (3), 'Entry Periods', of the <a href="official-rules.html">Microsoft Migrate and Modernize Sweepstakes official rules</a>.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>How will I be notified if I am a winner of a Microsoft Migrate and Modernize Sweepstakes drawing?</h2>
+                        <p>Winners will be notified via an email sent to the email address they provided in their sweepstakes form submission.</p>
+                        <p>The email will be from 'MindHub Pro by Pearson VUE' and will contain the 50% discount certification exam voucher won along with the expiration date and steps on how to redeem.</p>
+                        <p>Emails will be sent within seven (7) days of the applicable Prize Period drawing.</p>
+                        <p>Refer to section six (6), 'Winner selection and notification', of the <a href="official-rules.html">Microsoft Migrate and Modernize Sweepstakes official rules</a> for a full breakdown.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>How long does the Microsoft Migrate and Modernize Challenge Sweepstakes run?</h2>
+                        <p>The sweepstake runs until May 15, 2026, at 11:59 PM UTC (23:59).</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>I am a sweepstakes winner; how long do I have to redeem my prize?</h2>
+                        <p>All Microsoft Migrate and Modernize Challenge Sweepstakes discount certification exam vouchers must be redeemed by June 30, 2026.</p>
+                        <p>This means you must schedule and take your chosen exam by June 30, 2026. When using your voucher, you will not be able to use it for an exam date attempting to be scheduled for beyond June 30, 2026.</p>
+                        <p>The discount exam voucher is eligible for three specific Microsoft Certification exams conducted by Pearson Vue.</p>
+                        <ul>
+                            <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                            <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                            <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                        </ul>
+                        <p>For the full list of rules, please refer to the <a href="official-rules.html">Microsoft Migrate and Modernize Sweepstakes official rules</a>.</p>
+                    </div>
+
+                    <div class="faq-section">
+                        <h2>How do I redeem my discount Microsoft Certification exam voucher?</h2>
+                        <p>Instructions on how to redeem your voucher will be provided in the notification email you received from 'MindHub Pro by Pearson VUE' that also contained your voucher code. You can additionally refer to the <a href="redeem.html">How to redeem your prize</a> page.</p>
+                        <p>The discount exam voucher is eligible for three specific Microsoft Certification exams conducted by Pearson Vue.</p>
+                        <ul>
+                            <li><strong>AZ-900:</strong> Azure Fundamentals</li>
+                            <li><strong>AZ-800/801:</strong> Windows Server Hybrid Administrator Associate</li>
+                            <li><strong>AZ-204:</strong> Azure Developer Associate</li>
+                        </ul>
+                    </div>
+
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Azure Skilling</h4>
+                    <p class="footer-text">Empowering learners to build, secure, and innovate with Microsoft Azure through hands-on challenges and certifications.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="reactor.html">Microsoft Reactor</a></li>
+                        <li><a href="vouchers.html">Certification Vouchers</a></li>
+                        <li><a href="faq.html">Voucher FAQ</a></li>
+                        <li><a href="redeem.html">Redeem Voucher</a></li>
+                        <li><a href="https://learn.microsoft.com" target="_blank" rel="noopener noreferrer">Microsoft Learn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://azure.microsoft.com/en-us/solutions/" target="_blank" rel="noopener noreferrer">Azure Solutions</a></li>
+                        <li><a href="https://learn.microsoft.com/en-us/certifications/" target="_blank" rel="noopener noreferrer">Certifications</a></li>
+                        <li><a href="https://docs.microsoft.com/en-us/azure/" target="_blank" rel="noopener noreferrer">Azure Documentation</a></li>
+                        <li><a href="https://azure.microsoft.com/en-us/community/" target="_blank" rel="noopener noreferrer">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="official-rules.html">Official Rules</a></li>
+                        <li><a href="privacy.html">Privacy &amp; Security</a></li>
+                        <li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy</a></li>
+                        <li><a href="https://www.microsoft.com/en-us/legal/terms-of-use" target="_blank" rel="noopener noreferrer">Terms of Use</a></li>
+                        <li><a href="https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks" target="_blank" rel="noopener noreferrer">Trademarks</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 Microsoft Corporation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
