@@ -10,40 +10,40 @@
     <style>
         .sweepstakes-links {
             display: flex;
-            gap: 1.25rem;
+            gap: 1rem;
             justify-content: center;
-            margin-top: 2rem;
+            margin-bottom: 2.5rem;
             flex-wrap: wrap;
         }
         .sweepstakes-link-card {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            gap: 0.6rem;
-            padding: 1.25rem 1.75rem;
+            gap: 0.75rem;
+            padding: 0.875rem 1.75rem;
             background: #fff;
             border: 2px solid #e0ecff;
-            border-radius: 12px;
+            border-radius: 10px;
             text-decoration: none;
             color: var(--color-purple, #0053a6);
             font-weight: 600;
             font-size: 0.95rem;
-            min-width: 160px;
+            min-width: 200px;
             transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
             cursor: pointer;
         }
         .sweepstakes-link-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(0, 83, 166, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 83, 166, 0.15);
             border-color: var(--color-purple, #0053a6);
             background: #f0f6ff;
         }
         .sweepstakes-link-card:active {
-            transform: scale(0.96);
+            transform: scale(0.97);
             box-shadow: 0 2px 8px rgba(0, 83, 166, 0.12);
         }
         .sweepstakes-link-card .card-icon {
-            font-size: 1.75rem;
+            font-size: 1.4rem;
         }
     </style>
 </head>
@@ -90,6 +90,21 @@
             <h2 class="section-title">Voucher Program Details</h2>
             <p class="section-description">Complete the Migrate and Modernize Challenge and submit a sweepstakes entry form by May 15, 2026 to enter for your chance to win one of 2,000 discount certification exam vouchers.</p>
 
+            <div class="sweepstakes-links">
+                <a href="official-rules.html" class="sweepstakes-link-card">
+                    <span class="card-icon">📋</span>
+                    <span>Official Rules</span>
+                </a>
+                <a href="faq.html" class="sweepstakes-link-card">
+                    <span class="card-icon">❓</span>
+                    <span>FAQ</span>
+                </a>
+                <a href="redeem.html" class="sweepstakes-link-card">
+                    <span class="card-icon">🎟️</span>
+                    <span>How to Redeem</span>
+                </a>
+            </div>
+
             <div class="learn-grid">
                 <div class="learn-card">
                     <div class="learn-icon">🎯</div>
@@ -119,22 +134,7 @@
     <section class="what-you-learn">
         <div class="container">
             <h2 class="section-title">Terms & Conditions</h2>
-            <p class="section-description">For the complete Microsoft Migrate and Modernize Summit Challenge Sweepstakes terms and conditions, please consult the official rules. You can also check out the FAQ for more information or find out how to redeem your prize.</p>
-
-            <div class="sweepstakes-links">
-                <a href="official-rules.html" class="sweepstakes-link-card">
-                    <span class="card-icon">📋</span>
-                    <span>Official Rules</span>
-                </a>
-                <a href="faq.html" class="sweepstakes-link-card">
-                    <span class="card-icon">❓</span>
-                    <span>FAQ</span>
-                </a>
-                <a href="redeem.html" class="sweepstakes-link-card">
-                    <span class="card-icon">🎟️</span>
-                    <span>How to Redeem</span>
-                </a>
-            </div>
+            <p class="section-description">For the complete Microsoft Migrate and Modernize Summit Challenge Sweepstakes terms and conditions, please consult the <a href="official-rules.html">official rules</a>. You can also check out the <a href="faq.html">FAQ</a> for more information.</p>
         </div>
     </section>
 
