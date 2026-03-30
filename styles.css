@@ -1514,7 +1514,7 @@ a:focus {
    CHALLENGE BOX
    ========================================== */
 .challenge-box-section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-md) 0;
     background: var(--color-white);
 }
 
@@ -1578,13 +1578,13 @@ a:focus {
    VIDEO GRID SECTION
    ========================================== */
 .videos-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--color-gray-lightest);
 }
 
 .videos-section-header {
     text-align: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
 }
 
 .videos-section-title {
@@ -1599,7 +1599,7 @@ a:focus {
 }
 
 .video-featured-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--color-white);
 }
 
@@ -1772,13 +1772,13 @@ a:focus {
    LEARNING PATH CARDS
    ========================================== */
 .learning-section {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--color-white);
 }
 
 .learning-section-header {
     text-align: center;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
 }
 
 .learning-section-title {
