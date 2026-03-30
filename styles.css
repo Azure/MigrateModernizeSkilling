@@ -1511,6 +1511,366 @@ a:focus {
 }
 
 /* ==========================================
+   CHALLENGE BANNER
+   ========================================== */
+.challenge-banner {
+    background: linear-gradient(135deg, #0053a6 0%, #0078d4 100%);
+    color: var(--color-white);
+    padding: var(--spacing-md) 0;
+    box-shadow: var(--shadow-md);
+}
+
+.challenge-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.challenge-banner-text {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+.challenge-banner-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.challenge-banner .btn-primary {
+    flex-shrink: 0;
+    white-space: nowrap;
+    background: var(--color-white);
+    color: var(--color-azure-blue);
+    border-color: var(--color-white);
+}
+
+.challenge-banner .btn-primary:hover {
+    background: var(--color-gray-lightest);
+    border-color: var(--color-gray-lightest);
+}
+
+@media (max-width: 768px) {
+    .challenge-banner-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .challenge-banner-text {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* ==========================================
+   VIDEO GRID SECTION
+   ========================================== */
+.videos-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--color-gray-lightest);
+}
+
+.videos-section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.videos-section-title {
+    font-size: var(--font-size-h2);
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+.videos-section-subtitle {
+    font-size: var(--font-size-large);
+    color: var(--color-gray-light);
+}
+
+.video-featured-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--color-white);
+}
+
+.video-featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+}
+
+.video-featured-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    border: 2px solid var(--color-azure-blue);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.video-featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    color: inherit;
+}
+
+.video-thumb-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-thumb-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+}
+
+.video-featured-card:hover .video-thumb-wrap img {
+    transform: scale(1.03);
+}
+
+.video-play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 68px;
+    background: rgba(0, 120, 212, 0.88);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-base), background var(--transition-base);
+    backdrop-filter: blur(2px);
+}
+
+.video-featured-card:hover .video-play-overlay {
+    transform: translate(-50%, -50%) scale(1.12);
+    background: var(--color-azure-blue);
+}
+
+.play-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 13px 0 13px 24px;
+    border-color: transparent transparent transparent white;
+    margin-left: 5px;
+}
+
+.video-featured-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--color-azure-blue);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.video-card-body {
+    padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.video-card-title {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-xs);
+    line-height: var(--line-height-heading);
+}
+
+.video-card-desc {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-light);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-sm);
+}
+
+.video-watch-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-azure-blue);
+}
+
+.video-watch-cta:hover {
+    color: var(--color-purple);
+}
+
+/* Regular video grid (3 columns) */
+.video-reg-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.video-reg-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    border: 1px solid var(--color-gray-lighter);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.video-reg-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    color: inherit;
+}
+
+.video-reg-card .video-play-overlay {
+    width: 52px;
+    height: 52px;
+}
+
+.video-reg-card .play-triangle {
+    border-width: 10px 0 10px 18px;
+    margin-left: 4px;
+}
+
+.video-reg-card .video-card-body {
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.video-reg-card .video-card-title {
+    font-size: var(--font-size-base);
+}
+
+/* ==========================================
+   LEARNING PATH CARDS
+   ========================================== */
+.learning-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--color-white);
+}
+
+.learning-section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.learning-section-title {
+    font-size: var(--font-size-h2);
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+.learning-section-subtitle {
+    font-size: var(--font-size-large);
+    color: var(--color-gray-light);
+}
+
+.learning-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+.learning-path-card {
+    background: var(--color-white);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    border-top: 4px solid var(--color-azure-blue);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.learning-path-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    color: inherit;
+}
+
+.learning-path-icon {
+    font-size: 42px;
+    margin-bottom: var(--spacing-md);
+}
+
+.learning-path-tag {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--color-azure-blue);
+    margin-bottom: var(--spacing-xs);
+}
+
+.learning-path-title {
+    font-size: var(--font-size-h4);
+    font-weight: 600;
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-xs);
+    line-height: var(--line-height-heading);
+}
+
+.learning-path-desc {
+    font-size: var(--font-size-small);
+    color: var(--color-gray-light);
+    line-height: var(--line-height-base);
+    flex-grow: 1;
+    margin-bottom: var(--spacing-md);
+}
+
+.learning-path-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    color: var(--color-azure-blue);
+    margin-top: auto;
+}
+
+/* Responsive - video and learning grids */
+@media (max-width: 768px) {
+    .video-featured-grid {
+        grid-template-columns: 1fr;
+    }
+    .video-reg-grid {
+        grid-template-columns: 1fr;
+    }
+    .learning-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .video-reg-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .learning-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================
    PRINT STYLES
    ========================================== */
 @media print {
